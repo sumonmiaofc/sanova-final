@@ -1,0 +1,19 @@
+Options -Indexes
+RewriteEngine On
+
+# Remove .html extension from URLs
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^\.]+)$ $1.html [NC,L]
+
+# Redirect /index to /
+RewriteCond %{THE_REQUEST} /index\.html
+RewriteRule ^index\.html$ / [R=301,L]
+
+# Redirect existing .html URLs to clean versions
+RewriteCond %{REQUEST_FILENAME} \.html$
+RewriteRule ^(.+)\.html$ /$1 [R=301,L]
+
+# Security headers
+Header always set X-Content-Type-Options "nosniff"
+Header always set X-Frame-Options "SAMEORIGIN"
