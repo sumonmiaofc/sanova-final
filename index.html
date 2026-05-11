@@ -19,39 +19,33 @@
 <div data-inc="partials/header.html"></div>
 <main>
 
-<!-- HERO — Full-width image + content + stats panel -->
-<div class="hero-v2">
+<!-- HERO — Clean full-width image, NO text on image -->
+<div class="hero-v3">
 
-  <!-- Full-width clinic image -->
-  <div class="hero-v2-img-wrap">
-    <div class="hero-v2-img"></div>
-    <div class="hero-v2-img-overlay"></div>
-
-    <!-- Badge over image -->
-    <span class="hero-v2-badge reveal">
-      <span class="live-dot"></span>
-      Now Open · North Tucson's Premier Urgent Care
-    </span>
-
-    <!-- Title centered over image -->
-    <div class="hero-v2-title-wrap">
-      <h1 id="heroTitle" class="hero-v2-title reveal reveal-d1">
-        Premier <em>Urgent Care</em><br>in Tucson, AZ
-      </h1>
-      <p class="hero-v2-subtitle reveal reveal-d2">Fast, compassionate walk-in care · No appointment needed</p>
+  <!-- Pure image — contained, rounded, nothing on top -->
+  <div class="hero-v3-img-wrap">
+    <div class="hero-v3-img-inner">
+      <div class="hero-v3-img"></div>
     </div>
   </div>
 
-  <!-- Content below image -->
-  <div class="hero-v2-content">
-    <div class="container hero-v2-inner">
+  <!-- Content section below image -->
+  <div class="hero-v3-content">
+    <div class="container hero-v3-inner">
 
-      <!-- Left: lede + CTAs -->
-      <div class="hero-v2-left reveal">
-        <p class="hero-v2-lede">
-          Board-certified providers treating the whole family — from minor injuries to illnesses, X-rays, and wellness. Walk in anytime, Mon–Sat 7AM–7PM on Oracle Road.
+      <!-- Left: title + lede + CTAs -->
+      <div class="hero-v3-left">
+        <span class="hero-v3-badge">
+          <span class="live-dot"></span>
+          Walk-Ins Welcome · North Tucson
+        </span>
+        <h1 id="heroTitle" class="hero-v3-title reveal">
+          Premier <em>Urgent Care</em><br>in Tucson, AZ
+        </h1>
+        <p class="hero-v3-lede reveal reveal-d1">
+          Fast, compassionate walk-in care on Oracle Road. Board-certified providers treating the whole family — from minor injuries to illnesses, X-rays, and wellness. No appointment needed.
         </p>
-        <div class="hero-v2-ctas">
+        <div class="hero-v3-ctas reveal reveal-d2">
           <a href="tel:5202322525" class="btn btn-accent btn-lg">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" style="width:18px;height:18px;"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6A2 2 0 014.11 2h3a2 2 0 012 1.72c.13.96.37 1.9.72 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.91.35 1.85.59 2.81.72A2 2 0 0122 16.92z"/></svg>
             Call 520-232-2525
@@ -64,29 +58,29 @@
       </div>
 
       <!-- Right: Stats panel -->
-      <ul class="hero-v2-stats reveal reveal-d2" aria-label="Clinic highlights">
-        <li class="hero-v2-stat">
-          <span class="hero-v2-stat-num" data-count>&lt;30</span>
-          <span class="hero-v2-stat-label">Min Avg Wait</span>
+      <ul class="hero-v3-stats reveal reveal-d2" aria-label="Clinic highlights">
+        <li class="hero-v3-stat">
+          <span class="hero-v3-stat-num" data-count>&lt;30</span>
+          <span class="hero-v3-stat-label">Min Avg Wait</span>
         </li>
-        <li class="hero-v2-stat">
-          <div class="hero-v2-stat-stars">
+        <li class="hero-v3-stat">
+          <div class="hero-v3-stat-stars">
             <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
             <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
             <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
             <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
             <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
           </div>
-          <span class="hero-v2-stat-num" data-count>4.9</span>
-          <span class="hero-v2-stat-label">Google Rating</span>
+          <span class="hero-v3-stat-num" data-count>4.9</span>
+          <span class="hero-v3-stat-label">Google Rating</span>
         </li>
-        <li class="hero-v2-stat">
-          <span class="hero-v2-stat-num">7AM</span>
-          <span class="hero-v2-stat-label">Open Early</span>
+        <li class="hero-v3-stat">
+          <span class="hero-v3-stat-num">7AM</span>
+          <span class="hero-v3-stat-label">Open Early</span>
         </li>
-        <li class="hero-v2-stat">
-          <span class="hero-v2-stat-num" data-count>6</span>
-          <span class="hero-v2-stat-label">Days a Week</span>
+        <li class="hero-v3-stat">
+          <span class="hero-v3-stat-num" data-count>6</span>
+          <span class="hero-v3-stat-label">Days a Week</span>
         </li>
       </ul>
 
