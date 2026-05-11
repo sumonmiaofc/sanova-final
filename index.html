@@ -10,60 +10,89 @@
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"MedicalClinic","name":"Sanova Urgent Care","address":{"@type":"PostalAddress","streetAddress":"15883 N Oracle Rd","addressLocality":"Tucson","addressRegion":"AZ","postalCode":"85739"},"telephone":"+15202322525","openingHours":"Mo-Sa 07:00-19:00"}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link rel="icon" type="image/png" href="assets/favicon.png" sizes="32x32">
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<link rel="apple-touch-icon" href="assets/favicon.png">
 <link rel="stylesheet" href="css/style.css"/>
-<!-- Elfsight -->
-<script src="https://elfsightcdn.com/platform.js" async></script>
 </head>
 <body data-page="index">
 <div data-inc="partials/header.html"></div>
 <main>
 
-<!-- HERO -->
-<section class="hero" aria-labelledby="heroTitle">
-  <div class="hero-bg"><div class="hero-img"></div><div class="hero-overlay"></div></div>
-  <div class="container hero-inner">
-    <span class="hero-badge reveal"><span class="live-dot"></span>Now Open · North Tucson's Premier Urgent Care</span>
-    <h1 id="heroTitle" class="hero-title reveal reveal-d1">Premier <em>Urgent Care</em> in Tucson, AZ</h1>
-    <p class="hero-lede reveal reveal-d2">Fast, compassionate walk-in care on Oracle Road. No appointment needed. Board-certified providers treating the whole family — from minor injuries to illnesses, X-rays, and wellness.</p>
-    <div class="hero-ctas reveal reveal-d3">
-      <a href="tel:5202322525" class="btn btn-accent btn-lg"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6A2 2 0 014.11 2h3a2 2 0 012 1.72c.13.96.37 1.9.72 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.91.35 1.85.59 2.81.72A2 2 0 0122 16.92z"/></svg>Call 520-232-2525</a>
-      <a href="https://maps.google.com/?q=15883+N+Oracle+Rd+Tucson+AZ" target="_blank" rel="noopener" class="btn btn-outline-white btn-lg"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>Get Directions</a>
+<!-- HERO — Full-width image + content + stats panel -->
+<div class="hero-v2">
+
+  <!-- Full-width clinic image -->
+  <div class="hero-v2-img-wrap">
+    <div class="hero-v2-img"></div>
+    <div class="hero-v2-img-overlay"></div>
+
+    <!-- Badge over image -->
+    <span class="hero-v2-badge reveal">
+      <span class="live-dot"></span>
+      Now Open · North Tucson's Premier Urgent Care
+    </span>
+
+    <!-- Title centered over image -->
+    <div class="hero-v2-title-wrap">
+      <h1 id="heroTitle" class="hero-v2-title reveal reveal-d1">
+        Premier <em>Urgent Care</em><br>in Tucson, AZ
+      </h1>
+      <p class="hero-v2-subtitle reveal reveal-d2">Fast, compassionate walk-in care · No appointment needed</p>
     </div>
-    <ul class="hero-stats reveal reveal-d4">
-      <li class="hero-stat">
-        <div class="hero-stat-val">
-          <strong data-count>&lt;30</strong>
-        </div>
-        <span>Min Avg Wait</span>
-      </li>
-      <li class="hero-stat">
-        <div class="hero-stat-stars">
-          <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-          <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-          <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-          <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-          <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-        </div>
-        <div class="hero-stat-val">
-          <strong data-count>5.0</strong>
-        </div>
-        <span>Google Rating</span>
-      </li>
-      <li class="hero-stat">
-        <div class="hero-stat-val">
-          <strong data-count>6</strong>
-        </div>
-        <span>Days a Week</span>
-      </li>
-      <li class="hero-stat">
-        <div class="hero-stat-val">
-          <strong>7AM</strong>
-        </div>
-        <span>Open Early</span>
-      </li>
-    </ul>
   </div>
-</section>
+
+  <!-- Content below image -->
+  <div class="hero-v2-content">
+    <div class="container hero-v2-inner">
+
+      <!-- Left: lede + CTAs -->
+      <div class="hero-v2-left reveal">
+        <p class="hero-v2-lede">
+          Board-certified providers treating the whole family — from minor injuries to illnesses, X-rays, and wellness. Walk in anytime, Mon–Sat 7AM–7PM on Oracle Road.
+        </p>
+        <div class="hero-v2-ctas">
+          <a href="tel:5202322525" class="btn btn-accent btn-lg">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" style="width:18px;height:18px;"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6A2 2 0 014.11 2h3a2 2 0 012 1.72c.13.96.37 1.9.72 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.91.35 1.85.59 2.81.72A2 2 0 0122 16.92z"/></svg>
+            Call 520-232-2525
+          </a>
+          <a href="https://maps.google.com/?q=15883+N+Oracle+Rd+Tucson+AZ" target="_blank" rel="noopener" class="btn btn-outline btn-lg">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" style="width:18px;height:18px;"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            Get Directions
+          </a>
+        </div>
+      </div>
+
+      <!-- Right: Stats panel -->
+      <ul class="hero-v2-stats reveal reveal-d2" aria-label="Clinic highlights">
+        <li class="hero-v2-stat">
+          <span class="hero-v2-stat-num" data-count>&lt;30</span>
+          <span class="hero-v2-stat-label">Min Avg Wait</span>
+        </li>
+        <li class="hero-v2-stat">
+          <div class="hero-v2-stat-stars">
+            <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          </div>
+          <span class="hero-v2-stat-num" data-count>4.9</span>
+          <span class="hero-v2-stat-label">Google Rating</span>
+        </li>
+        <li class="hero-v2-stat">
+          <span class="hero-v2-stat-num">7AM</span>
+          <span class="hero-v2-stat-label">Open Early</span>
+        </li>
+        <li class="hero-v2-stat">
+          <span class="hero-v2-stat-num" data-count>6</span>
+          <span class="hero-v2-stat-label">Days a Week</span>
+        </li>
+      </ul>
+
+    </div>
+  </div>
+</div>
 
 <!-- TRUST BAR -->
 <section class="trust-bar" aria-label="Key features">
@@ -151,18 +180,28 @@
 </section>
 
 <!-- REVIEWS -->
-<!-- REVIEWS — Google Reviews via Elfsight -->
 <section class="section bg-bg" id="reviews" aria-labelledby="revTitle">
   <div class="container">
     <div class="section-head section-head-center reveal" style="margin-inline:auto;text-align:center;">
       <span class="label" style="justify-content:center;">Patient Stories</span>
       <h2 id="revTitle" class="h2" style="margin-top:.6rem;">What Our Patients Are Saying</h2>
+      <div style="display:flex;align-items:center;justify-content:center;gap:.75rem;margin-top:1rem;">
+        <div style="display:flex;gap:.2rem;">
+          <svg viewBox="0 0 24 24" fill="#f59e0b" style="width:20px;height:20px;"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg viewBox="0 0 24 24" fill="#f59e0b" style="width:20px;height:20px;"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg viewBox="0 0 24 24" fill="#f59e0b" style="width:20px;height:20px;"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg viewBox="0 0 24 24" fill="#f59e0b" style="width:20px;height:20px;"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg viewBox="0 0 24 24" fill="#f59e0b" style="width:20px;height:20px;"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        </div>
+        <span style="font-weight:600;color:var(--c-ink);">4.9</span>
+        <span style="color:var(--c-muted);font-size:.9rem;">from verified Google reviews</span>
+      </div>
     </div>
-
-    <!-- Elfsight Google Reviews Widget -->
-    <script src="https://elfsightcdn.com/platform.js" async></script>
-    <div class="elfsight-app-5745e59f-fec0-4a77-9e38-93dc2610e8e4" data-elfsight-app-lazy></div>
-
+    <div class="grid-3">
+      <div class="review-card reveal"><div class="review-quote">"</div><div class="review-stars"><svg viewBox="0 0 24 24" fill="#f59e0b"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" fill="#f59e0b"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" fill="#f59e0b"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" fill="#f59e0b"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" fill="#f59e0b"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div><p class="review-text">"The staff was incredibly welcoming and I was seen in under fifteen minutes. The doctor took time to actually listen — something rare these days."</p><div class="review-author"><div class="review-avatar">ML</div><div><div class="review-name">Maria L.</div><div class="review-meta">Tucson, AZ · Google Review</div></div></div></div>
+      <div class="review-card reveal reveal-d1"><div class="review-quote">"</div><div class="review-stars"><svg viewBox="0 0 24 24" fill="#f59e0b"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" fill="#f59e0b"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" fill="#f59e0b"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" fill="#f59e0b"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" fill="#f59e0b"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div><p class="review-text">"Twisted my ankle on Saturday. Walked in, got X-rays on-site, and was home with a brace in about an hour. Outstanding care and professionalism."</p><div class="review-author"><div class="review-avatar">DR</div><div><div class="review-name">David R.</div><div class="review-meta">Oro Valley · Google Review</div></div></div></div>
+      <div class="review-card reveal reveal-d2"><div class="review-quote">"</div><div class="review-stars"><svg viewBox="0 0 24 24" fill="#f59e0b"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" fill="#f59e0b"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" fill="#f59e0b"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" fill="#f59e0b"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" fill="#f59e0b"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div><p class="review-text">"Brought our daughter in with a high fever. Clean, modern facility and kind providers — a fraction of the cost of an ER visit. We'll always come back."</p><div class="review-author"><div class="review-avatar">JK</div><div><div class="review-name">Jennifer K.</div><div class="review-meta">Catalina · Google Review</div></div></div></div>
+    </div>
   </div>
 </section>
 
