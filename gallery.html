@@ -37,63 +37,118 @@
       <p style="color:#64788a;font-size:1.05rem;">A look inside Sanova Urgent Care — 15883 N Oracle Rd, Tucson, AZ</p>
     </div>
 
-    <!-- IMAGE GRID -->
     <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;" id="galleryGrid">
 
-      <!-- 
-        HOW TO ADD YOUR IMAGES:
-        Replace each src="assets/images/gallery-1.jpg" with your actual image path.
-        Add or remove <div> blocks as needed.
-      -->
-
-      <div class="gal-thumb" onclick="openLightbox('assets/images/gallery-1.jpg','Clinic Exterior')" style="cursor:pointer;border-radius:12px;overflow:hidden;aspect-ratio:4/3;background:#d4eef2;position:relative;">
-        <img src="assets/images/gallery 1.jpeg" alt="Clinic Exterior" style="width:100%;height:100%;object-fit:cover;display:block;" onerror="this.parentElement.style.background='#d4eef2';this.style.display='none';">
-        <div class="gal-hover" style="position:absolute;inset:0;background:rgba(7,63,71,.45);opacity:0;transition:opacity .25s;display:flex;align-items:center;justify-content:center;">
-          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35M11 8v6M8 11h6"/></svg>
-        </div>
+      <div class="gal-thumb" data-src="assets/images/gallery 1.jpeg" data-cap="Clinic Exterior" style="cursor:pointer;border-radius:12px;overflow:hidden;aspect-ratio:4/3;position:relative;background:#d4eef2;">
+        <img src="assets/images/gallery 1.jpeg" alt="Clinic Exterior" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block;">
       </div>
 
-      <div class="gal-thumb" onclick="openLightbox('assets/images/gallery-2.jpg','Waiting Area')" style="cursor:pointer;border-radius:12px;overflow:hidden;aspect-ratio:4/3;background:#d4eef2;position:relative;">
-        <img src="assets/images/gallery 2.jpeeg" alt="Waiting Area" style="width:100%;height:100%;object-fit:cover;display:block;" onerror="this.parentElement.style.background='#d4eef2';this.style.display='none';">
-        <div class="gal-hover" style="position:absolute;inset:0;background:rgba(7,63,71,.45);opacity:0;transition:opacity .25s;display:flex;align-items:center;justify-content:center;">
-          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35M11 8v6M8 11h6"/></svg>
-        </div>
+      <div class="gal-thumb" data-src="assets/images/gallery 2.jpeg" data-cap="Waiting Area" style="cursor:pointer;border-radius:12px;overflow:hidden;aspect-ratio:4/3;position:relative;background:#d4eef2;">
+        <img src="assets/images/gallery 2.jpeg" alt="Waiting Area" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block;">
       </div>
 
-      <div class="gal-thumb" onclick="openLightbox('assets/images/gallery-3.jpg','Exam Room')" style="cursor:pointer;border-radius:12px;overflow:hidden;aspect-ratio:4/3;background:#d4eef2;position:relative;">
-        <img src="assets/images/gallery 3.jpeg" alt="Exam Room" style="width:100%;height:100%;object-fit:cover;display:block;" onerror="this.parentElement.style.background='#d4eef2';this.style.display='none';">
-        <div class="gal-hover" style="position:absolute;inset:0;background:rgba(7,63,71,.45);opacity:0;transition:opacity .25s;display:flex;align-items:center;justify-content:center;">
-          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35M11 8v6M8 11h6"/></svg>
-        </div>
+      <div class="gal-thumb" data-src="assets/images/gallery 3.jpeg" data-cap="Exam Room" style="cursor:pointer;border-radius:12px;overflow:hidden;aspect-ratio:4/3;position:relative;background:#d4eef2;">
+        <img src="assets/images/gallery 3.jpeg" alt="Exam Room" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block;">
       </div>
 
-      <div class="gal-thumb" onclick="openLightbox('assets/images/gallery-4.jpg','X-Ray Suite')" style="cursor:pointer;border-radius:12px;overflow:hidden;aspect-ratio:4/3;background:#d4eef2;position:relative;">
-        <img src="assets/images/gallery 4.jpeg" alt="X-Ray Suite" style="width:100%;height:100%;object-fit:cover;display:block;" onerror="this.parentElement.style.background='#d4eef2';this.style.display='none';">
-        <div class="gal-hover" style="position:absolute;inset:0;background:rgba(7,63,71,.45);opacity:0;transition:opacity .25s;display:flex;align-items:center;justify-content:center;">
-          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35M11 8v6M8 11h6"/></svg>
-        </div>
+      <div class="gal-thumb" data-src="assets/images/gallery 4.jpeg" data-cap="X-Ray Suite" style="cursor:pointer;border-radius:12px;overflow:hidden;aspect-ratio:4/3;position:relative;background:#d4eef2;">
+        <img src="assets/images/gallery 4.jpeg" alt="X-Ray Suite" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block;">
       </div>
 
-      <div class="gal-thumb" onclick="openLightbox('assets/images/gallery-5.jpg','IV Therapy Suite')" style="cursor:pointer;border-radius:12px;overflow:hidden;aspect-ratio:4/3;background:#d4eef2;position:relative;">
-        <img src="assets/images/gallery 5.jpeg" alt="IV Therapy Suite" style="width:100%;height:100%;object-fit:cover;display:block;" onerror="this.parentElement.style.background='#d4eef2';this.style.display='none';">
-        <div class="gal-hover" style="position:absolute;inset:0;background:rgba(7,63,71,.45);opacity:0;transition:opacity .25s;display:flex;align-items:center;justify-content:center;">
-          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35M11 8v6M8 11h6"/></svg>
-        </div>
+      <div class="gal-thumb" data-src="assets/images/gallery 5.jpeg" data-cap="IV Therapy Suite" style="cursor:pointer;border-radius:12px;overflow:hidden;aspect-ratio:4/3;position:relative;background:#d4eef2;">
+        <img src="assets/images/gallery 5.jpeg" alt="IV Therapy Suite" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block;">
       </div>
 
-      <div class="gal-thumb" onclick="openLightbox('assets/images/gallery-6.jpg','In-House Lab')" style="cursor:pointer;border-radius:12px;overflow:hidden;aspect-ratio:4/3;background:#d4eef2;position:relative;">
-        <img src="assets/images/gallery 6.jpeg" alt="In-House Lab" style="width:100%;height:100%;object-fit:cover;display:block;" onerror="this.parentElement.style.background='#d4eef2';this.style.display='none';">
-        <div class="gal-hover" style="position:absolute;inset:0;background:rgba(7,63,71,.45);opacity:0;transition:opacity .25s;display:flex;align-items:center;justify-content:center;">
-          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35M11 8v6M8 11h6"/></svg>
-        </div>
+      <div class="gal-thumb" data-src="assets/images/gallery 6.jpeg" data-cap="In-House Lab" style="cursor:pointer;border-radius:12px;overflow:hidden;aspect-ratio:4/3;position:relative;background:#d4eef2;">
+        <img src="assets/images/gallery 6.jpeg" alt="In-House Lab" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block;">
+      </div>
+
+      <div class="gal-thumb" data-src="assets/images/gallery 7.jpeg" data-cap="Reception Desk" style="cursor:pointer;border-radius:12px;overflow:hidden;aspect-ratio:4/3;position:relative;background:#d4eef2;">
+        <img src="assets/images/gallery 7.jpeg" alt="Reception Desk" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block;">
+      </div>
+
+      <div class="gal-thumb" data-src="assets/images/gallery 8.jpeg" data-cap="Treatment Room" style="cursor:pointer;border-radius:12px;overflow:hidden;aspect-ratio:4/3;position:relative;background:#d4eef2;">
+        <img src="assets/images/gallery 8.jpeg" alt="Treatment Room" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block;">
+      </div>
+
+      <div class="gal-thumb" data-src="assets/images/gallery 9.jpeg" data-cap="Staff Area" style="cursor:pointer;border-radius:12px;overflow:hidden;aspect-ratio:4/3;position:relative;background:#d4eef2;">
+        <img src="assets/images/gallery 9.jpeg" alt="Staff Area" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block;">
+      </div>
+
+      <div class="gal-thumb" data-src="assets/images/gallery 10.jpeg" data-cap="Consultation Room" style="cursor:pointer;border-radius:12px;overflow:hidden;aspect-ratio:4/3;position:relative;background:#d4eef2;">
+        <img src="assets/images/gallery 10.jpeg" alt="Consultation Room" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block;">
+      </div>
+
+      <div class="gal-thumb" data-src="assets/images/gallery 11.jpeg" data-cap="Pharmacy Area" style="cursor:pointer;border-radius:12px;overflow:hidden;aspect-ratio:4/3;position:relative;background:#d4eef2;">
+        <img src="assets/images/gallery 11.jpeg" alt="Pharmacy Area" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block;">
+      </div>
+
+      <div class="gal-thumb" data-src="assets/images/gallery 12.jpeg" data-cap="Entrance" style="cursor:pointer;border-radius:12px;overflow:hidden;aspect-ratio:4/3;position:relative;background:#d4eef2;">
+        <img src="assets/images/gallery 12.jpeg" alt="Entrance" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block;">
       </div>
 
     </div>
-    <!-- আরো image যোগ করতে উপরের pattern follow করো -->
-    <!-- gallery-7.jpg, gallery-8.jpg etc. -->
+
+    <div id="seeMoreWrap" style="text-align:center;margin-top:2rem;">
+      <button id="seeMoreBtn" onclick="loadMoreGallery()" style="background:linear-gradient(135deg,#073f47,#0d6e7a);color:#fff;font-family:'Plus Jakarta Sans',sans-serif;font-weight:600;font-size:1rem;padding:1rem 2.5rem;border:none;border-radius:9999px;cursor:pointer;">
+        See More Photos
+      </button>
+    </div>
 
   </div>
 </section>
+
+<!-- LIGHTBOX -->
+<div id="lightbox" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,.93);z-index:9999;align-items:center;justify-content:center;padding:1.5rem;">
+  <button onclick="closeLightbox()" style="position:absolute;top:1.25rem;right:1.5rem;background:none;border:none;color:#fff;font-size:2.5rem;cursor:pointer;line-height:1;z-index:1;">&#x2715;</button>
+  <button onclick="galPrev(event)" style="position:absolute;left:1rem;background:rgba(255,255,255,.15);border:none;color:#fff;font-size:2rem;cursor:pointer;width:52px;height:52px;border-radius:50%;display:flex;align-items:center;justify-content:center;z-index:1;">&#8249;</button>
+  <img id="lightboxImg" src="" alt="" style="max-height:88vh;max-width:88vw;object-fit:contain;border-radius:10px;display:block;">
+  <button onclick="galNext(event)" style="position:absolute;right:1rem;background:rgba(255,255,255,.15);border:none;color:#fff;font-size:2rem;cursor:pointer;width:52px;height:52px;border-radius:50%;display:flex;align-items:center;justify-content:center;z-index:1;">&#8250;</button>
+</div>
+
+<style>
+  .gal-thumb { transition: opacity .2s; }
+  .gal-thumb:hover { opacity: .88; }
+  .gal-hidden { display: none !important; }
+  @media(max-width:768px){ #galleryGrid { grid-template-columns: repeat(2,1fr) !important; } }
+  @media(max-width:480px){ #galleryGrid { grid-template-columns: 1fr !important; } }
+</style>
+
+<!-- LIGHTBOX -->
+<div id="lightbox" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,.93);z-index:9999;align-items:center;justify-content:center;padding:1.5rem;">
+  <button onclick="closeLightbox()" style="position:absolute;top:1.25rem;right:1.5rem;background:none;border:none;color:#fff;font-size:2.5rem;cursor:pointer;line-height:1;z-index:1;">&#x2715;</button>
+  <button onclick="galPrev(event)" style="position:absolute;left:1rem;background:rgba(255,255,255,.15);border:none;color:#fff;font-size:2rem;cursor:pointer;width:52px;height:52px;border-radius:50%;display:flex;align-items:center;justify-content:center;z-index:1;">&#8249;</button>
+  <img id="lightboxImg" src="" alt="" style="max-height:88vh;max-width:88vw;object-fit:contain;border-radius:10px;display:block;">
+  <button onclick="galNext(event)" style="position:absolute;right:1rem;background:rgba(255,255,255,.15);border:none;color:#fff;font-size:2rem;cursor:pointer;width:52px;height:52px;border-radius:50%;display:flex;align-items:center;justify-content:center;z-index:1;">&#8250;</button>
+  <p id="lightboxCaption" style="position:absolute;bottom:1.25rem;left:0;right:0;color:rgba(255,255,255,.65);font-size:.9rem;text-align:center;"></p>
+</div>
+
+<style>
+  .gal-thumb { transition: opacity .2s; }
+  .gal-thumb:hover { opacity: .88; }
+  .gal-hidden { display: none !important; }
+  @media(max-width:768px){ #galleryGrid { grid-template-columns: repeat(2,1fr) !important; } }
+  @media(max-width:480px){ #galleryGrid { grid-template-columns: 1fr !important; } }
+</style>
+
+  </div>
+</section>
+
+<!-- LIGHTBOX -->
+<div id="lightbox" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,.93);z-index:9999;align-items:center;justify-content:center;padding:1.5rem;">
+  <button onclick="closeLightbox()" style="position:absolute;top:1.25rem;right:1.5rem;background:none;border:none;color:#fff;font-size:2.5rem;cursor:pointer;line-height:1;z-index:1;">&#x2715;</button>
+  <button onclick="galPrev(event)" style="position:absolute;left:1rem;background:rgba(255,255,255,.15);border:none;color:#fff;font-size:2rem;cursor:pointer;width:52px;height:52px;border-radius:50%;display:flex;align-items:center;justify-content:center;z-index:1;">&#8249;</button>
+  <img id="lightboxImg" src="" alt="" style="max-height:88vh;max-width:88vw;object-fit:contain;border-radius:10px;display:block;">
+  <button onclick="galNext(event)" style="position:absolute;right:1rem;background:rgba(255,255,255,.15);border:none;color:#fff;font-size:2rem;cursor:pointer;width:52px;height:52px;border-radius:50%;display:flex;align-items:center;justify-content:center;z-index:1;">&#8250;</button>
+  <p id="lightboxCaption" style="position:absolute;bottom:1.25rem;left:0;right:0;color:rgba(255,255,255,.65);font-size:.9rem;text-align:center;"></p>
+</div>
+
+<style>
+  .gal-thumb:hover .gal-hover { opacity: 1 !important; }
+  .gal-hidden { display: none !important; }
+  @media(max-width:768px){ #galleryGrid { grid-template-columns: repeat(2,1fr) !important; } }
+  @media(max-width:480px){ #galleryGrid { grid-template-columns: 1fr !important; } }
+</style>
 
 <!-- LIGHTBOX -->
 <div id="lightbox" onclick="closeLightbox()" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,.92);z-index:9999;align-items:center;justify-content:center;padding:1.5rem;">
