@@ -29,114 +29,87 @@
   </div>
 </section>
 
-<section class="section" aria-labelledby="galTitle">
-  <div class="container">
-    <div class="section-head section-head-center reveal" style="margin-inline:auto;text-align:center;">
-      <span class="label" style="justify-content:center;">Our Facility</span>
-      <h2 id="galTitle" class="h2" style="margin-top:.6rem;">A Modern Space Built for Your Comfort</h2>
-      <p>From our welcoming exterior to our clean, well-equipped exam rooms — we designed every space with patient comfort and clinical excellence in mind.</p>
+<section style="padding:clamp(3rem,6vw,5rem) 0;background:#f7fafc;">
+  <div style="width:100%;max-width:1280px;margin:0 auto;padding:0 clamp(1.25rem,4vw,2.5rem);">
+
+    <div style="text-align:center;margin-bottom:2.5rem;">
+      <h2 style="font-family:'Playfair Display',serif;font-size:clamp(2rem,4vw,3rem);font-weight:700;color:#0f1923;letter-spacing:-.02em;margin-bottom:.75rem;">Our Clinic Gallery</h2>
+      <p style="color:#64788a;font-size:1.05rem;">A look inside Sanova Urgent Care — 15883 N Oracle Rd, Tucson, AZ</p>
     </div>
-    <div class="gallery-grid reveal">
-      <!-- Big exterior tile -->
-      <div class="gal-item g-wide">
-        <svg viewBox="0 0 700 440" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" class="gal-art">
-          <defs><linearGradient id="ext1" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#073f47"/><stop offset="100%" stop-color="#0d6e7a"/></linearGradient></defs>
-          <rect width="700" height="440" fill="url(#ext1)"/>
-          <rect x="160" y="80" width="380" height="260" fill="#ffffff" opacity=".92" rx="3"/>
-          <rect x="180" y="100" width="100" height="160" fill="#1a8fa8" opacity=".5"/>
-          <rect x="290" y="100" width="100" height="160" fill="#1a8fa8" opacity=".5"/>
-          <rect x="400" y="100" width="120" height="160" fill="#1a8fa8" opacity=".45"/>
-          <rect x="275" y="270" width="150" height="70" fill="#0d6e7a" opacity=".7"/>
-          <rect x="160" y="340" width="380" height="20" fill="#073f47"/>
-          <text x="350" y="218" text-anchor="middle" font-family="Playfair Display,serif" font-size="48" font-weight="700" fill="#0d6e7a">SANOVA</text>
-          <text x="350" y="258" text-anchor="middle" font-family="Playfair Display,serif" font-size="24" font-weight="500" fill="#0d6e7a" letter-spacing="6">URGENT CARE</text>
-          <text x="698" y="430" text-anchor="end" font-family="serif" font-size="28" font-weight="700" fill="rgba(255,255,255,.4)">15883</text>
-          <circle cx="80" cy="150" r="100" fill="#5cb88a" opacity=".18"/>
-        </svg>
-        <div class="gal-overlay"><div><span class="gal-label">The Exterior</span><span class="gal-sm">15883 N Oracle Rd storefront</span></div></div>
+
+    <!-- IMAGE GRID -->
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;" id="galleryGrid">
+
+      <!-- 
+        HOW TO ADD YOUR IMAGES:
+        Replace each src="assets/images/gallery-1.jpg" with your actual image path.
+        Add or remove <div> blocks as needed.
+      -->
+
+      <div class="gal-thumb" onclick="openLightbox('assets/images/gallery-1.jpg','Clinic Exterior')" style="cursor:pointer;border-radius:12px;overflow:hidden;aspect-ratio:4/3;background:#d4eef2;position:relative;">
+        <img src="assets/images/gallery-1.jpg" alt="Clinic Exterior" style="width:100%;height:100%;object-fit:cover;display:block;" onerror="this.parentElement.style.background='#d4eef2';this.style.display='none';">
+        <div class="gal-hover" style="position:absolute;inset:0;background:rgba(7,63,71,.45);opacity:0;transition:opacity .25s;display:flex;align-items:center;justify-content:center;">
+          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35M11 8v6M8 11h6"/></svg>
+        </div>
       </div>
-      <!-- Waiting area -->
-      <div class="gal-item g-tall">
-        <svg viewBox="0 0 500 440" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" class="gal-art">
-          <rect width="500" height="440" fill="#f7fafc"/>
-          <rect x="0" y="360" width="500" height="80" fill="#e2eaee"/>
-          <rect x="0" y="340" width="500" height="25" fill="#0d6e7a" opacity=".6"/>
-          <rect x="60" y="260" width="120" height="80" rx="8" fill="#0d6e7a" opacity=".4"/>
-          <rect x="200" y="260" width="100" height="80" rx="8" fill="#0d6e7a" opacity=".3"/>
-          <rect x="320" y="260" width="120" height="80" rx="8" fill="#0d6e7a" opacity=".4"/>
-          <rect x="180" y="150" width="140" height="100" rx="4" fill="#073f47" opacity=".75"/>
-          <rect x="190" y="160" width="120" height="18" rx="2" fill="rgba(255,255,255,.5)"/>
-          <rect x="190" y="184" width="95" height="12" rx="2" fill="rgba(255,255,255,.3)"/>
-          <rect x="190" y="202" width="110" height="12" rx="2" fill="rgba(255,255,255,.3)"/>
-          <text x="250" y="130" text-anchor="middle" font-family="Playfair Display,serif" font-size="28" font-weight="600" fill="#0d6e7a">Sanova</text>
-          <ellipse cx="80" cy="350" rx="30" ry="12" fill="#3f9b75" opacity=".6"/>
-          <path d="M80 350 L70 290 M80 350 L90 280 M80 350 L80 275" stroke="#3f9b75" stroke-width="2.5" opacity=".6"/>
-          <ellipse cx="420" cy="350" rx="25" ry="10" fill="#3f9b75" opacity=".6"/>
-          <path d="M420 350 L413 300 M420 350 L428 295" stroke="#3f9b75" stroke-width="2.5" opacity=".6"/>
-        </svg>
-        <div class="gal-overlay"><div><span class="gal-label">The Waiting Area</span><span class="gal-sm">Modern, comfortable lobby</span></div></div>
+
+      <div class="gal-thumb" onclick="openLightbox('assets/images/gallery-2.jpg','Waiting Area')" style="cursor:pointer;border-radius:12px;overflow:hidden;aspect-ratio:4/3;background:#d4eef2;position:relative;">
+        <img src="assets/images/gallery-2.jpg" alt="Waiting Area" style="width:100%;height:100%;object-fit:cover;display:block;" onerror="this.parentElement.style.background='#d4eef2';this.style.display='none';">
+        <div class="gal-hover" style="position:absolute;inset:0;background:rgba(7,63,71,.45);opacity:0;transition:opacity .25s;display:flex;align-items:center;justify-content:center;">
+          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35M11 8v6M8 11h6"/></svg>
+        </div>
       </div>
-      <!-- Exam room -->
-      <div class="gal-item g-3">
-        <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" class="gal-art">
-          <rect width="400" height="300" fill="#f0fdf4"/>
-          <rect x="80" y="130" width="240" height="90" rx="8" fill="#0d6e7a" opacity=".35"/>
-          <rect x="80" y="110" width="240" height="30" rx="4" fill="#fff" opacity=".9"/>
-          <rect x="320" y="160" width="40" height="60" rx="4" fill="#0d6e7a" opacity=".5"/>
-          <circle cx="340" cy="165" r="5" fill="#073f47" opacity=".7"/>
-          <rect x="50" y="50" width="90" height="60" rx="4" fill="#d4eef2" opacity=".9"/>
-          <line x1="95" y1="50" x2="95" y2="110" stroke="#0d6e7a" stroke-width="1" opacity=".4"/>
-          <rect x="270" y="55" width="80" height="50" rx="4" fill="#dbeafe" opacity=".9"/>
-          <circle cx="310" cy="55" r="5" fill="#0d6e7a" opacity=".7"/>
-          <text x="200" y="30" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12" fill="#0d6e7a" opacity=".7">EXAM ROOM</text>
-        </svg>
-        <div class="gal-overlay"><div><span class="gal-label">Exam Room</span><span class="gal-sm">Clean & fully equipped</span></div></div>
+
+      <div class="gal-thumb" onclick="openLightbox('assets/images/gallery-3.jpg','Exam Room')" style="cursor:pointer;border-radius:12px;overflow:hidden;aspect-ratio:4/3;background:#d4eef2;position:relative;">
+        <img src="assets/images/gallery-3.jpg" alt="Exam Room" style="width:100%;height:100%;object-fit:cover;display:block;" onerror="this.parentElement.style.background='#d4eef2';this.style.display='none';">
+        <div class="gal-hover" style="position:absolute;inset:0;background:rgba(7,63,71,.45);opacity:0;transition:opacity .25s;display:flex;align-items:center;justify-content:center;">
+          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35M11 8v6M8 11h6"/></svg>
+        </div>
       </div>
-      <!-- X-Ray -->
-      <div class="gal-item g-3">
-        <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" class="gal-art">
-          <rect width="400" height="300" fill="#eff6ff"/>
-          <rect x="160" y="40" width="80" height="30" rx="4" fill="#1d4ed8" opacity=".7"/>
-          <rect x="188" y="70" width="24" height="120" fill="#1d4ed8" opacity=".7"/>
-          <rect x="130" y="190" width="140" height="15" rx="4" fill="#1d4ed8" opacity=".5"/>
-          <rect x="80" y="205" width="240" height="70" rx="4" fill="#dbeafe" opacity=".8"/>
-          <text x="200" y="57" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#fff" font-weight="600">X-RAY</text>
-          <text x="200" y="30" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12" fill="#1d4ed8" opacity=".7">DIGITAL IMAGING</text>
-        </svg>
-        <div class="gal-overlay"><div><span class="gal-label">X-Ray Suite</span><span class="gal-sm">On-site digital imaging</span></div></div>
+
+      <div class="gal-thumb" onclick="openLightbox('assets/images/gallery-4.jpg','X-Ray Suite')" style="cursor:pointer;border-radius:12px;overflow:hidden;aspect-ratio:4/3;background:#d4eef2;position:relative;">
+        <img src="assets/images/gallery-4.jpg" alt="X-Ray Suite" style="width:100%;height:100%;object-fit:cover;display:block;" onerror="this.parentElement.style.background='#d4eef2';this.style.display='none';">
+        <div class="gal-hover" style="position:absolute;inset:0;background:rgba(7,63,71,.45);opacity:0;transition:opacity .25s;display:flex;align-items:center;justify-content:center;">
+          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35M11 8v6M8 11h6"/></svg>
+        </div>
       </div>
-      <!-- IV suite -->
-      <div class="gal-item g-3">
-        <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" class="gal-art">
-          <rect width="400" height="300" fill="#f0fdf4"/>
-          <rect x="50" y="130" width="180" height="140" rx="12" fill="#3f9b75" opacity=".35"/>
-          <rect x="50" y="115" width="180" height="30" rx="8" fill="#3f9b75" opacity=".5"/>
-          <rect x="260" y="60" width="4" height="180" fill="#073f47" opacity=".7"/>
-          <rect x="252" y="60" width="20" height="6" rx="2" fill="#073f47" opacity=".7"/>
-          <rect x="248" y="66" width="28" height="70" rx="6" fill="#fff" stroke="#0d6e7a" stroke-width="2" opacity=".9"/>
-          <rect x="252" y="80" width="20" height="48" rx="4" fill="#7de8b8" opacity=".7"/>
-          <circle cx="262" cy="245" r="12" fill="#073f47" opacity=".5"/>
-          <text x="200" y="30" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12" fill="#15803d" opacity=".8">SANOVA LIFE · IV SUITE</text>
-        </svg>
-        <div class="gal-overlay"><div><span class="gal-label">IV Suite</span><span class="gal-sm">Wellness & hydration therapy</span></div></div>
+
+      <div class="gal-thumb" onclick="openLightbox('assets/images/gallery-5.jpg','IV Therapy Suite')" style="cursor:pointer;border-radius:12px;overflow:hidden;aspect-ratio:4/3;background:#d4eef2;position:relative;">
+        <img src="assets/images/gallery-5.jpg" alt="IV Therapy Suite" style="width:100%;height:100%;object-fit:cover;display:block;" onerror="this.parentElement.style.background='#d4eef2';this.style.display='none';">
+        <div class="gal-hover" style="position:absolute;inset:0;background:rgba(7,63,71,.45);opacity:0;transition:opacity .25s;display:flex;align-items:center;justify-content:center;">
+          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35M11 8v6M8 11h6"/></svg>
+        </div>
       </div>
-      <!-- Lab -->
-      <div class="gal-item g-3">
-        <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" class="gal-art">
-          <rect width="400" height="300" fill="#fef9c3"/>
-          <rect x="80" y="160" width="240" height="100" rx="4" fill="#a16207" opacity=".2"/>
-          <rect x="100" y="90" width="40" height="90" rx="4" fill="#a16207" opacity=".4"/>
-          <rect x="160" y="100" width="40" height="80" rx="4" fill="#d97706" opacity=".5"/>
-          <rect x="220" y="85" width="40" height="95" rx="4" fill="#a16207" opacity=".4"/>
-          <rect x="280" y="110" width="40" height="70" rx="4" fill="#d97706" opacity=".3"/>
-          <rect x="80" y="178" width="240" height="4" fill="#a16207" opacity=".3"/>
-          <text x="200" y="30" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12" fill="#a16207" opacity=".8">IN-HOUSE LABORATORY</text>
-        </svg>
-        <div class="gal-overlay"><div><span class="gal-label">In-House Lab</span><span class="gal-sm">Rapid testing & blood panels</span></div></div>
+
+      <div class="gal-thumb" onclick="openLightbox('assets/images/gallery-6.jpg','In-House Lab')" style="cursor:pointer;border-radius:12px;overflow:hidden;aspect-ratio:4/3;background:#d4eef2;position:relative;">
+        <img src="assets/images/gallery-6.jpg" alt="In-House Lab" style="width:100%;height:100%;object-fit:cover;display:block;" onerror="this.parentElement.style.background='#d4eef2';this.style.display='none';">
+        <div class="gal-hover" style="position:absolute;inset:0;background:rgba(7,63,71,.45);opacity:0;transition:opacity .25s;display:flex;align-items:center;justify-content:center;">
+          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35M11 8v6M8 11h6"/></svg>
+        </div>
       </div>
+
     </div>
+    <!-- আরো image যোগ করতে উপরের pattern follow করো -->
+    <!-- gallery-7.jpg, gallery-8.jpg etc. -->
+
   </div>
 </section>
+
+<!-- LIGHTBOX -->
+<div id="lightbox" onclick="closeLightbox()" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,.92);z-index:9999;align-items:center;justify-content:center;padding:1.5rem;">
+  <button onclick="closeLightbox()" style="position:absolute;top:1.25rem;right:1.5rem;background:none;border:none;color:#fff;font-size:2rem;cursor:pointer;line-height:1;">&#x2715;</button>
+  <button onclick="prevImg(event)" style="position:absolute;left:1.25rem;background:rgba(255,255,255,.15);border:none;color:#fff;font-size:2rem;cursor:pointer;width:48px;height:48px;border-radius:50%;display:flex;align-items:center;justify-content:center;">&#8249;</button>
+  <img id="lightboxImg" src="" alt="" style="max-height:88vh;max-width:90vw;object-fit:contain;border-radius:8px;pointer-events:none;">
+  <p id="lightboxCaption" style="position:absolute;bottom:1.5rem;color:rgba(255,255,255,.7);font-size:.9rem;text-align:center;width:100%;"></p>
+  <button onclick="nextImg(event)" style="position:absolute;right:1.25rem;background:rgba(255,255,255,.15);border:none;color:#fff;font-size:2rem;cursor:pointer;width:48px;height:48px;border-radius:50%;display:flex;align-items:center;justify-content:center;">&#8250;</button>
+</div>
+
+<!-- GALLERY STYLE + JS -->
+<style>
+  .gal-thumb:hover .gal-hover { opacity: 1 !important; }
+  @media(max-width:768px){ #galleryGrid { grid-template-columns: repeat(2,1fr) !important; } }
+  @media(max-width:480px){ #galleryGrid { grid-template-columns: 1fr !important; } }
+</style>
 
 <section class="section cta-section">
   <div class="container cta-inner section-sm" style="padding-block:clamp(3rem,6vw,5rem);">
