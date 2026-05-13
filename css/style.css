@@ -339,7 +339,7 @@ html.js-on .reveal.visible { opacity: 1; transform: none; }
 }
 .logo:hover .logo-mark { transform: rotate(-8deg) scale(1.05); }
 .logo-mark svg { width: 20px; height: 20px; color: #fff; }
-.logo-img { height: 40px; width: auto; object-fit: contain; flex-shrink: 0; }
+.logo-img { height: 100px; width: auto; object-fit: contain; flex-shrink: 0; }
 .logo-text { line-height: 1; }
 .logo-name { font-size: 1.1rem; font-weight: var(--fw-bold); color: var(--c-ink); letter-spacing: var(--ls-snug); white-space: nowrap; }
 .logo-sub { font-size: .58rem; font-weight: var(--fw-semi); letter-spacing: .18em; text-transform: uppercase; color: var(--c-teal); margin-top: 2px; }
